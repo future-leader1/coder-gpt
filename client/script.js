@@ -1,3 +1,6 @@
+const bot = "./assets/bot.svg";
+const user = "./assets/user.svg";
+
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
 //
@@ -47,7 +50,7 @@ function chatStripe(isAi, value, uniqueId) {
             <div class="chat">
                 <div class="profile">
                     <img 
-                      src="${isAi ? "./assets/bot.svg" : "./assets/user.svg"}" 
+                      src="${isAi ? bot : user}" 
                       alt="${isAi ? "bot" : "user"}" 
                     />
                 </div>
